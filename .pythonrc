@@ -1,0 +1,12 @@
+# https://medium.com/@oalejel/printing-command-history-within-the-python-interactive-terminal-repl-simplified-5fd202c64880
+# export PYTHONSTARTUP=~/.pythonrc
+
+import readlinedef history(numLines=-1):
+    total = readline.get_current_history_length()
+    if numLines == -1:
+        # default value prints everything
+        numLines = total
+    if numLines > 0:
+        # range from n->end in order to incl. recent line
+        for i in range(total - numLines, total):
+            print(readline.get_history_item(i + 1))
