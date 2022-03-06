@@ -1,2 +1,6 @@
 [alias]
 lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+  name = swifthorseman
+  email = swifthorseman@users.noreply.github.com
+  signingkey = ABD90D53EFA83777
